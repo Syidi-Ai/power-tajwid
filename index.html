@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power Tajwid Kids - Moden Futuristik</title>
+  <link rel="icon" href="https://arleta.site/interactivelink/1093/SYIDI.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Neue', cursive;
+    }
+
+body {
+      background: url('https://arleta.site/interactivelink/1093/compressed-5.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow-x: hidden;
+      padding: 1rem;
+    }
+
+.overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+.container {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      padding: 2.5rem;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+      color: #ffffff;
+      animation: fadeIn 1s ease;
+    }
+
+.logo {
+      width: 140px;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 0 10px #00ffffaa);
+    }
+
+h1 {
+      font-size: 2.6rem;
+      color: #00e5ff;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px #00e5ff88;
+      letter-spacing: -0.5px;
+    }
+
+p {
+      font-size: 1.3rem;
+      color: #e0f7fa;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+.btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+.btn {
+      background: linear-gradient(135deg, #ff4081, #7c4dff);
+      color: white;
+      border: none;
+      border-radius: 15px;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(255, 64, 129, 0.4);
+      width: 80%;
+      max-width: 300px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+    }
+
+.btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255, 64, 129, 0.7);
+    }
+
+.btn:focus-visible {
+      outline: 3px solid #00e5ff;
+    }
+
+#loader {
+      position: fixed;
+      inset: 0;
+      background: #000;
+      color: #00e5ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      z-index: 9999;
+      font-family: 'Comic Neue', cursive;
+    }
+
+.character {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 3;
+      animation: float 4s ease-in-out infinite;
+    }
+
+.character-1 {
+      top: 10%;
+      left: 10%;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/1864/1864593.png');
+      animation-delay: 0s;
+    }
+
+.character-2 {
+      top: 10%;
+      right: 10%;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/1864/1864534.png');
+      animation-delay: 1s;
+    }
+
+.character-3 {
+      bottom: 10%;
+      left: 15%;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/1864/1864589.png');
+      animation-delay: 2s;
+    }
+
+.character-4 {
+      bottom: 10%;
+      right: 15%;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/1864/1864528.png');
+      animation-delay: 3s;
+    }
+
+@keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+@keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+    }
+
+@media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      p { font-size: 1.1rem; }
+      .btn { font-size: 1rem; padding: 0.9rem 1.4rem; }
+      .character {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="loader">Memuat Power Tajwid...</div>
+  <div class="overlay"></div>
+
+<!-- Karakter animasi untuk kanak-kanak -->
+  <div class="character character-1"></div>
+  <div class="character character-2"></div>
+  <div class="character character-3"></div>
+  <div class="character character-4"></div>
+
+<div class="container">
+    <img src="https://arleta.site/interactivelink/1093/SYIDI.png" alt="Logo Power Tajwid" class="logo">
+    <h1>Power Tajwid</h1>
+    <p>Jom belajar tajwid dengan teknologi moden dan menyeronokkan! Klik mana-mana butang di bawah untuk mula.</p>
+    <div class="btn-container">
+      <a href="https://interactivelink.co/view/latihantajwid.html" class="btn">🎯 Mari Mula!</a>
+      <a href="https://interactivelink.co/view/belajartajwid.html" class="btn">📘 Nak Belajar?</a>
+      <a href="https://interactivelink.co/view/papanmarkah" class="btn" id="markah-btn">📊 Markah Saya</a>
+    </div>
+  </div>
+
+<!-- Muzik Latar & Bunyi Klik -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="https://arleta.site/interactivelink/1093/Power-Tajwid-AudioTrimmer.com-1.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="click-sound" preload="auto">
+    <source src="https://arleta.site/interactivelink/1093/mixkit-light-button-2580.mp3" type="audio/mpeg">
+  </audio>
+
+<script>
+    window.addEventListener('load', () => {
+      document.getElementById('loader').style.display = 'none';
+    });
+
+document.addEventListener('DOMContentLoaded', () => {
+      const music = document.getElementById('bg-music');
+      const clickSound = document.getElementById('click-sound');
+      const buttons = document.querySelectorAll('.btn');
+
+const playMusic = () => {
+        music.currentTime = 0;
+        music.play().catch(() => {
+          document.addEventListener('click', () => {
+            music.play().catch(() => {});
+          }, { once: true });
+        });
+      };
+
+playMusic();
+
+buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          clickSound.currentTime = 0;
+          clickSound.play();
+          music.pause();
+        });
+      });
+    });
+  </script></body>
+</html>
